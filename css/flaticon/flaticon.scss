@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?d323500d5bc4801ef20da69861e8c41b") format("truetype"),
+url("./flaticon.woff?d323500d5bc4801ef20da69861e8c41b") format("woff"),
+url("./flaticon.woff2?d323500d5bc4801ef20da69861e8c41b") format("woff2"),
+url("./flaticon.eot?d323500d5bc4801ef20da69861e8c41b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?d323500d5bc4801ef20da69861e8c41b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "brochure": "\f101",
+    "download-circular-button": "\f102",
+    "folder": "\f103",
+    "windows": "\f104",
+);
+
+.flaticon-brochure:before {
+    content: map-get($flaticon-map, "brochure");
+}
+.flaticon-download-circular-button:before {
+    content: map-get($flaticon-map, "download-circular-button");
+}
+.flaticon-folder:before {
+    content: map-get($flaticon-map, "folder");
+}
+.flaticon-windows:before {
+    content: map-get($flaticon-map, "windows");
+}

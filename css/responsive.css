@@ -1,0 +1,55 @@
+@media(max-width: 933px){
+    .booklet-box{
+        width: 28%;
+        height: 7rem;
+    }
+    .video1{
+        overflow: hidden;
+    }
+
+    .video1 video{
+        height: 75rem;
+        width:auto;
+    }
+
+    .info:hover{
+        transform: scale(1, 1);
+    }
+
+    .game-intro{
+        height: 50rem;
+    }
+  
+}
+
+@media (max-width: 760px){
+    .first-container{
+        flex-direction: column;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    .form-input{
+        flex-basis: 100%;
+    }
+
+    .button{
+        font-size: 3rem;
+        height: 3rem;
+    }
+
+    .booklet-box{
+        width: 30rem;
+    }
+
+    .game-intro{
+        height: 30rem;
+    }
+
+}

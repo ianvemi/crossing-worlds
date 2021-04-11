@@ -1,0 +1,302 @@
+/*FUENTES*/
+@font-face {
+    font-family: "omegle";
+    src: url("fonts/OMEGLE.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "rockford";
+    src: url("fonts/RockfordSans-Light.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "century";
+    src: url("fonts/CaviarDreams.ttf");
+}
+
+/*variables de colores principales*/
+:root{
+    --redpink: #f1477a;
+    --purple: #2E1D77;
+    --yellow: #ffc107d3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+/*hack model box*/
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/*ADAPTACION REM UNIVERSAL*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "rockford";
+    font-size: 16px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(210,210,210,1) 100%);
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 4rem;
+    padding: 2rem;
+    color:azure;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main h2{
+    color: var(--redpink);
+    
+}
+
+h3{
+    color: white;
+}
+
+section{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h3{
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.red{
+    color: var(--redpink);
+}
+
+.titulo{
+    text-align: center;
+    font-family: "omegle";
+    font-size: 4.0rem;
+    padding-bottom: 0rem;
+    color: var(--redpink);
+    background-color:var(--purple);
+    font-weight: normal;
+    transition: all 0.4s;
+}
+
+.titulo:hover{
+    color: var(--yellow);
+}
+
+.game-intro{
+    background-image:url("../img/cw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 45rem;
+    position: relative;
+    margin: 0;
+}
+
+.video1{
+    position: relative;
+}
+
+.video1 video{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(241,71,122,0.3) 30%, rgba(46,29,119,1) 100%);
+    height: 100%;
+    width: 100%;
+}
+
+.content-intro p{
+    color: var(--yellow);
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.text-intro{
+    text-align:center;
+    border-radius: 4rem, 4rem, 0 ,0;
+    display: block;
+    padding: 3rem;
+    background-color: #42006848;
+    border-radius: 3rem;
+}
+
+.booklet-box{
+    width: 20%;
+    background-color: var(--purple);
+    border-radius: 4rem;
+    display: flex;
+    height:8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    margin-top: 2rem;
+}
+
+.booklet-box:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.button{
+    height:fit-content;
+    font-size: 3rem;
+    background-color: var(--purple);
+    border: none;
+    transition: all 400ms;
+    text-align: center;
+    text-decoration: none;
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.booklet-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    flex-grow: 1;
+}
+
+.first-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    flex-grow: 1;
+}
+
+.info{
+    background-color: var(--purple);
+    border-radius: 4.5rem;
+    flex-basis: 32%;
+    transition: all 0.5s;
+}
+
+.info:hover{
+    transform: scale(1.1 , 1.1);
+}
+
+.info p{
+    color: white;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.button2{
+    height:60%;
+    width: 60%;
+    font-size: 6rem;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0.5rem;
+    transition: all 400ms;
+    text-align: center;
+    text-decoration: none;
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.button2:hover{
+    color: var(--redpink);
+    font-weight: bold;
+}
+
+/*CONTACT STYLES*/
+.formulario{
+    background-color:var(--purple);
+    width: 70%;
+    padding: 3rem;
+    border-radius: 4rem;
+}
+
+.formulario fieldset{
+    border: none;
+    color: var(--yellow);
+}
+
+.formulario legend{
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+.content-form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+
+}
+
+.form-input input{
+    height: 4.5rem;
+    width: 100%;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.form-input textarea{
+    height: 4.5rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+
+.form-input button{
+    width: 50%;
+    height: 100%;
+    border-radius: 3rem;
+    background-color: var(--yellow);
+    color: var(--purple);
+    padding: 1rem;
+}
+
+.content-form div{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+/*FOOTER*/
+footer{
+    padding: 2%;
+    width: 100%;
+    background-color: var(--purple);
+    height: 20%;
+    color: white;
+}
